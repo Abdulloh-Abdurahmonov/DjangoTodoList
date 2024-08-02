@@ -397,16 +397,7 @@
         "kind": 5,
         "importPath": "todolist.wsgi",
         "description": "todolist.wsgi",
-        "peekOfCode": "application = get_wsgi_application()\napp = application",
-        "detail": "todolist.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "todolist.wsgi",
-        "description": "todolist.wsgi",
-        "peekOfCode": "app = application",
+        "peekOfCode": "application = get_wsgi_application()",
         "detail": "todolist.wsgi",
         "documentation": {}
     },
