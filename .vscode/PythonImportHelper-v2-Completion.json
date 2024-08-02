@@ -208,7 +208,7 @@
         "kind": 5,
         "importPath": "todolist.settings",
         "description": "todolist.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-s5bmb1jmw9@17q4znfe^f#p+@o_u$=1v=x4bmh(9^=l^gzk2j%'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-s5bmb1jmw9@17q4znfe^f#p+@o_u$=1v=x4bmh(9^=l^gzk2j%'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['.vercel.app']\n# Application definition\nINSTALLED_APPS = [",
         "detail": "todolist.settings",
         "documentation": {}
     },
@@ -217,7 +217,7 @@
         "kind": 5,
         "importPath": "todolist.settings",
         "description": "todolist.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-s5bmb1jmw9@17q4znfe^f#p+@o_u$=1v=x4bmh(9^=l^gzk2j%'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-s5bmb1jmw9@17q4znfe^f#p+@o_u$=1v=x4bmh(9^=l^gzk2j%'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['.vercel.app']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "todolist.settings",
         "documentation": {}
     },
@@ -226,7 +226,7 @@
         "kind": 5,
         "importPath": "todolist.settings",
         "description": "todolist.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['.vercel.app']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "todolist.settings",
         "documentation": {}
     },
@@ -235,7 +235,7 @@
         "kind": 5,
         "importPath": "todolist.settings",
         "description": "todolist.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'todos.apps.TodosConfig'",
+        "peekOfCode": "ALLOWED_HOSTS = ['.vercel.app']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'todos.apps.TodosConfig'",
         "detail": "todolist.settings",
         "documentation": {}
     },
@@ -397,7 +397,16 @@
         "kind": 5,
         "importPath": "todolist.wsgi",
         "description": "todolist.wsgi",
-        "peekOfCode": "application = get_wsgi_application()",
+        "peekOfCode": "application = get_wsgi_application()\napp = application",
+        "detail": "todolist.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "todolist.wsgi",
+        "description": "todolist.wsgi",
+        "peekOfCode": "app = application",
         "detail": "todolist.wsgi",
         "documentation": {}
     },
