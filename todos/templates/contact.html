@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <section class="contact">
+        <h1 style="font-size: 30px; margin-bottom: 40px;">Contact Us</h1>
+        <h2>Developer: <a href="https://t.me/Abdulloh_Abdurrohmanov" style="color: #00a6ff;" target="_blank">Abdulloh Abdurahmonov</a></h2>
+        <h2>Coding Language: <a href="https://www.python.org/" style="color: #4a86b5;">Python</a></h2>
+        <h2>Technologies:<a
+        href="https://www.djangoproject.com/" 
+        style="color: green"
+        target="_blank"
+        >Django</a
+      > & <a href="https://ru.wikipedia.org/wiki/HTML" style="color: #e54c21;">HTML 5</a> & <a href="https://ru.wikipedia.org/wiki/CSS" style="color: #214ce5;">CSS 3</a> </h2>
+        <p>
+            <a href="{% url 'home' %}" style="color: rgb(255, 179, 0);">Back to Home</a>
+        </p>
+    </section>
+{% endblock content %}
+    

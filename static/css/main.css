@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap);
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 140px;
+}
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 90px;
+  background-color: #00a6ff;
+  color: #fff;
+  position: fixed;
+  top: 0;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header > div > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Indie Flower', handwriting;
+  
+
+  font-weight: 700;
+}
+header > div > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none;
+}
+header > div > nav > ul > li > a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+main {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > .home > h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+main > .home > h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+h1 > a {
+  color: #00a6ff;
+}
+
+h2 > a {
+  color: rgb(255, 179, 0);
+}
+
+.header-link {
+  background: transparent;
+  display: flex;
+  padding: 5px;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.header-link:hover {
+  background: #fff;
+  color: #00a6ff;
+}
+
+.todos{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.todos h1{
+  margin-bottom: 20px;
+}
+
+.todos>.todoList> ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  margin-top: 20px;
+  gap: 12px;
+  list-style: none;
+}
+.todos > .todoList > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #eeeeee8d;
+}
+.todos > .todoList > ul > li > span {
+  width: 500px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #00a6ff;
+}
+
+.todos > .todoList > ul > li > span::first-letter{
+  text-transform: uppercase;
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.interface span {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #b3b3b3;
+}
+
+.interface a i {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.interface a i:hover {
+  color: var(--clr);
+  transform: scale(1.2);
+}
+
+.todoCreate{
+  width: 100%;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.todos form{
+  display: flex;
+  gap: 0px;
+  
+  width: 100%;
+}
+
+.todos form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(255, 179, 0);
+}
+
+.todos form input[type="submit"]{
+  border: none;
+  background: #00a6ff;
+  color: white;
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+

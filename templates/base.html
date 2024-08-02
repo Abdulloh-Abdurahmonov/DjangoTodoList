@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="{% url 'home' %}">Todo</a>
+        <nav>
+          <ul>
+            <li><a href="{% url 'home' %}" class="header-link">Home</a></li>
+            <li><a href="{% url 'todos' %}" class="header-link">Todo</a></li>
+            <li><a href="{% url 'contact' %}" class="header-link">Contact & About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>{% block content %} {% endblock content %}</main>
+
+    <h3
+      class="sign"
+      style="
+        font-weight: 500;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+      "
+    >
+      <a
+        href="https://www.djangoproject.com/"
+        style="color: green"
+        target="_blank"
+        >Django</a
+      >
+      project by
+      <a
+        href="https://t.me/Abdulloh_Abdurrohmanov"
+        style="color: #00a6ff"
+        target="_blank"
+        >Abdulloh Abdurahmonov</a
+      >
+    </h3>
+
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>

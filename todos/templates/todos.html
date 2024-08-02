@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="todos">
+  <div class="todoList">
+    <div class="todoCreate">
+      {% if todoCount > 0 %}
+      <h1>These are our <a href="{% url 'home' %}">Todos</a>.</h1>
+      {% else %}
+      <h1>We have not any <a href="{% url 'home' %}">Todos</a> yet!</h1>
+
+      {% endif %}
+
+      <form action="" method="POST">
+        {% csrf_token %} {{form.title}}
+        <input type="submit" value="Create" />
+      </form>
+    </div>
+    {% if todoCount > 0 %}
+    <ul>
+      {% for todo in todos %}
+      <li>
+        <span>{{ todo.title }}</span>
+        <div class="interface">
+          <span
+            ><i class="fa-solid fa-calendar-days"></i>{{ todo.created }}</span
+          >
+          <a href="#" style="--clr: rgb(255, 179, 0)"
+            ><i class="fa-solid fa-pen-to-square"></i
+          ></a>
+          <a href="{% url 'deleteTodo' todo.id %}" style="--clr: red"><i class="fa-solid fa-trash"></i></a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% endif %}
+  </div>
+</section>
+
+{% endblock content %}
